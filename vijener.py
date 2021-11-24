@@ -5,9 +5,13 @@ from prettytable import PrettyTable     # Для красивого вывода
 # ki – буквы ключа. Тогда буквы шифртекста можно получить так:
 
 alphabet = 'АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'
-open_text = 'ПРОГРАММИСТЫУЕХАЛИВКОВОРКИНГ'
+open_text = 'ПРОГРАММИСТЫ УЕХАЛИ В КОВОРКИНГ'
+
+open_text = ''.join(open_text.split())
 keyword = 'АГДЕВСЕА'
 
+print("\nОткрытый текст:")
+print(open_text)
 
 def show_table_text(open_text, keyword, msg):
     # Показать пронумерованные буквы текста, ключа в таблицы
